@@ -27,12 +27,12 @@ echo head(array(
 </div>
 
 <div id="other-exhibits">
-    <h2><?php echo link_to('exhibits', 'browse', __('Browse Exhibits')); ?></h2>
+    <h2><?php echo ('Historical Contexts'); ?></h2>
     <?php $exhibits = get_records('exhibit'); ?>
     <?php foreach ($exhibits as $exhibit): ?>
     <?php set_current_record('exhibit', $exhibit); ?>
     <div class="exhibit">
-        <?php if ($exhibitImage = record_image($exhibit, 'square_thumbnail')): ?>
+        <?php if ($exhibitImage = record_image($exhibit, 'thumbnail')): ?>
             <?php echo exhibit_builder_link_to_exhibit($exhibit, $exhibitImage, array('class' => 'image')); ?>
         <?php endif; ?>
 

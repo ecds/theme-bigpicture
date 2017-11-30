@@ -1218,7 +1218,7 @@
   }
 
   #other-exhibits .exhibit {
-    width: calc(20% - 42px);
+    width: calc(25% - 42px);
     margin: 21px;
     text-align: center;
     position: relative;

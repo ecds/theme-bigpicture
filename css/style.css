@@ -1219,9 +1219,11 @@
 
   #other-exhibits .exhibit {
     width: calc(25% - 42px);
+    height: calc(25% - 42px);
     margin: 21px;
     text-align: center;
     position: relative;
+    overflow: hidden;
   }
 
   #other-exhibits h2 {
@@ -1260,6 +1262,7 @@
 
   #other-exhibits img {
     width: 100%;
+    overflow: hidden;
   }
 
   /* @end */
@@ -2486,7 +2489,7 @@
   }
 
   #other-exhibits .exhibit {
-    width: calc(30% - 5px);
+    width: calc(45% - 5px);
     margin: 5px;
     text-align: center;
     position: relative;

@@ -32,7 +32,7 @@ echo head(array(
     <?php foreach ($exhibits as $exhibit): ?>
     <?php set_current_record('exhibit', $exhibit); ?>
     <div class="exhibit">
-        <?php if ($exhibitImage = record_image($exhibit, 'thumbnail')): ?>
+        <?php if ($exhibitImage = record_image($exhibit, 'square_thumbnail')): ?>
             <?php echo exhibit_builder_link_to_exhibit($exhibit, $exhibitImage, array('class' => 'image')); ?>
         <?php endif; ?>
 
